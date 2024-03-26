@@ -1,0 +1,18 @@
+###
+POST {{host}}/api/res-hub/upsert
+Content-Type: application/json
+
+{
+  "routeId": 6,
+  "reqKey": "default",
+  "type": "application/json",
+  "content": "{}",
+  "ttl": 60
+
+}
+
+###
+GET {{host}}/api/res-hub?routeId=16&reqKey=rk-g-mock-x:GET
+
+###
+GET {{host}}/api/res-hub/list?routeId=16

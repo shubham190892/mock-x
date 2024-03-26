@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route List</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style/home.css">
+</head>
+<body >
+<div class="container">
+    <h2>Routes</h2>
+    <div id="filters-container">
+        <div id="filters">
+            <label for="service-filter">Service:</label>
+            <select id="service-filter"></select>
+            <label for="method-filter">Method:</label>
+            <select id="method-filter"></select>
+        </div>
+        <button id="add-route-btn">Add Route</button>
+    </div>
+    <div id="modal-overlay">
+        <div id="modal">
+            <label for="service-input">Service:</label>
+            <select id="service-input"></select>
+            <!--<label for="other-service-input">New Service:</label>-->
+            <input type="text" id="other-service-input" style="display: none;">
+            <label for="method-input">Method:</label>
+            <select id="method-input">
+                <option value="GET">GET</option>
+                <option value="POST">POST</option>
+                <option value="PUT">PUT</option>
+                <option value="DELETE">DELETE</option>
+            </select>
+            <label for="accept-input">Accept:</label>
+            <select id="accept-input">
+                <option value="application/json">application/json</option>
+                <option value="plain/text">plain/text</option>
+            </select>
+            <label for="path-input">Path:</label>
+            <input type="text" id="path-input">
+            <label for="reqKeyParams-input">ReqKeys(Comma separated):</label>
+            <input type="text" id="reqKeyParams-input">
+            <label for="defaultTtl-input">Default TTL:</label>
+            <input type="number" id="defaultTtl-input" value="-1">
+            <label for="defaultHost-input">Default Host:</label>
+            <input type="text" id="defaultHost-input" value="">
+            <button id="cancel-route-btn">Cancel</button>
+            <button id="save-route-btn">Save</button>
+        </div>
+    </div>
+    <table id="route-table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Service</th>
+            <th>Method</th>
+            <th>Accept</th>
+            <th>Path</th>
+            <th>ReqKeys</th>
+            <th>Host</th>
+        </tr>
+        </thead>
+        <tbody id="route-list"></tbody>
+    </table>
+</div>
+<script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Details</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style/route.css">
+</head>
+<body>
+<div class="container">
+    <h1>Route Details</h1>
+    <div id="route-details"></div>
+    <button id="add-mock-btn">Add Mock</button>
+    <h2>Mocked Responses</h2>
+
+    <div id="mock-edit-overlay">
+        <div id="mock-edit-modal">
+            <h2>Mock</h2>
+            <form id="mockEditForm">
+                <label for="me-reqKey">Req Key:</label>
+                <input type="text" id="me-reqKey" name="reqKey">
+                <label for="me-type">Type:</label>
+                <input type="text" id="me-type" name="type">
+                <label for="me-ttl" id="ttl-label">TTL:</label>
+                <input type="number" id="me-ttl" name="type">
+                <label for="me-content">Content:</label>
+                <textarea id="me-content" name="content"></textarea>
+                <button  id="me-cancel">Cancel</button>
+                <button id="me-formatContent">Format</button>
+                <button type="submit" id="me-saveButton">Save</button>
+                <h6 id="me-error" style="color: red;"></h6>
+            </form>
+        </div>
+    </div>
+
+    <table id="mocked-responses">
+        <thead>
+        <tr>
+            <th></th>
+            <th>Request Key</th>
+            <th>Type</th>
+            <th>Content</th>
+        </tr>
+        </thead>
+        <tbody id="mocked-response-list"></tbody>
+    </table>
+</div>
+<script src="js/route.js"></script>
+</body>
+</html>

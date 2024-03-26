@@ -1,0 +1,18 @@
+###
+POST {{host}}/api/route/save
+Content-Type: application/json
+
+{
+  "service": "mockx",
+  "method": "GET",
+  "accept": "application/json",
+  "path": "api/route/list/test1",
+  "dynamic": 1,
+  "target": 1
+}
+
+###
+GET {{host}}/api/route/list
+
+###
+GET {{host}}/api/route/list?service=fc-stats-vertx&method=POST&bpc=true

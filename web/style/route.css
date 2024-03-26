@@ -1,0 +1,136 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#route-details {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style for individual divs within the container */
+#route-details div {
+    margin-bottom: 8px;
+}
+
+/* Style for the labels */
+#route-details div::before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Table styling */
+#mocked-responses {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#mocked-responses th,
+#mocked-responses td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#fixed-cell td {
+    width: 400px; /* Adjust the width as needed */
+    overflow: hidden;
+    /* Add ellipsis (...) to indicate hidden content */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Header row styling */
+#mocked-responses th {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect for rows */
+#mocked-responses tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Alternate row background color */
+#mocked-responses tbody tr:nth-child(even) {
+    background-color: #F9F9E9;
+}
+
+/* Styling for button */
+#add-mock-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover effect for button */
+#add-mock-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* CSS for the modal */
+#mock-edit-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#mock-edit-modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 35px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+

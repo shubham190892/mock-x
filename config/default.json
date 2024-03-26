@@ -1,0 +1,12 @@
+{
+  "name": "default",
+  "mysql": {
+    "host": "localhost",
+    "db": "mockx"
+  },
+  "services": {
+    "mock-x": {
+      "host": "http://localhost:8755"
+    }
+  }
+}

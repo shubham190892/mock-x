@@ -1,0 +1,194 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#route-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#route-table th, #route-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#route-table tbody tr:nth-child(even) {
+    background-color: #F9F9E9;
+}
+
+.route-id {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+.route-id:hover {
+    color: darkblue;
+}
+
+
+/* Container for filters and button */
+#filters-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Styling for labels */
+#filters label {
+    margin-right: 10px;
+}
+
+/* Styling for select elements */
+#filters select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Styling for button */
+#add-route-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover effect for button */
+#add-route-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* modal.css */
+
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Hide initially */
+    justify-content: center;
+    align-items: center;
+}
+
+#modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#modal h2 {
+    margin-top: 0;
+}
+
+#modal label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#modal input,
+#modal select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#save-route-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#save-route-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* CSS for the modal */
+#mock-edit-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    z-index: 999;
+}
+
+#mock-edit-modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
