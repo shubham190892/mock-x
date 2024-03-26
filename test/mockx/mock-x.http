@@ -2,4 +2,4 @@
 GET {{host}}/mockx/mock-x/api/route/list
 
 ###
-GET {{host}}/mockx/mock-x/api/route/list?service=fc-stats-vertx&method=POST
+GET {{host}}/mockx/mock-x/api/route/list?service=mock-x&method=POST

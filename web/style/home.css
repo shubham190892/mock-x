@@ -4,6 +4,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+#logo-image{
+    width: 250px;
+    height: 100px;
+}
+
 .container {
     max-width: 1000px;
     margin: 0 auto;

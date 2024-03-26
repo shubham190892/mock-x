@@ -15,4 +15,4 @@ Content-Type: application/json
 GET {{host}}/api/route/list
 
 ###
-GET {{host}}/api/route/list?service=fc-stats-vertx&method=POST&bpc=true
+GET {{host}}/api/route/list?service=mock-x&method=POST&bpc=true
