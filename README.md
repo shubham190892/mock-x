@@ -18,6 +18,7 @@ One http mock server for all micro services
 ## How to use
 - Open the web UI `http://localhost:8755`
 - Add Route you want to mock, requestKeyParams will be used to identify the request, It will be used to create requestKey for the request
+- If you want to mock route with path params, you can use `__param` in the path, and the value will set the context as path param, e.g. `/user/__id` will id in the context as path param
 - Add Response for the route, you can add multiple responses for the same route, based on the requestKey
 - You can also add custom response generator in the `route-map.js`, which will be called to generate the response for the request
 - Now use the following template to make the request to the mock server `http://localhost:8755/mockx/<service>/<path>?<query>`
